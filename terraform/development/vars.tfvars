@@ -6,4 +6,4 @@ lambda_handler = "coffee.tips.lambda.Handler"
 #s3_location = "s3://coffee.tips.aws.lambda/zip/aws-lambda-java-terraform-1.0.jar"
 runtime = "java11"
 cron = "rate(2 minutes)"
-timeout = 2
+timeout = 3
