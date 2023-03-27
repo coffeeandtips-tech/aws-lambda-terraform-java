@@ -1,8 +1,9 @@
 bucket = "coffee.tips.aws.lambda"
 lambda_function = "coffee_tips_aws_lambda"
-lambda_filename = "aws-lambda-java-terraform-1.0.jar"
-file_location = "../target/aws-lambda-java-terraform-1.0.jar"
+lambda_filename = "aws-lambda-terraform-java-1.0.jar"
+file_location = "../target/aws-lambda-terraform-java-1.0.jar"
 lambda_handler = "coffee.tips.lambda.Handler"
 #s3_location = "s3://coffee.tips.aws.lambda/zip/aws-lambda-java-terraform-1.0.jar"
 runtime = "java11"
-cron= "rate(2 minute)"
+cron = "rate(2 minutes)"
+timeout = 2

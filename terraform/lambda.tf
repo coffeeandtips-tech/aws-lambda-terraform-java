@@ -49,7 +49,7 @@ resource "aws_lambda_function" "coffee_tips_aws_lambda" {
   s3_bucket     = var.bucket
   s3_key        = var.lambda_filename
   runtime       = var.runtime
-  timeout = 2
+  timeout       = var.timeout
 }
 
 resource "aws_cloudwatch_event_rule" "event_rule" {
