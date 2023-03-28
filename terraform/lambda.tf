@@ -28,7 +28,7 @@ resource "aws_iam_role" "iam_for_lambda" {
   assume_role_policy = data.aws_iam_policy_document.coffee_tips_aws_lambda_iam_policy_document.json
 }
 
-resource "aws_iam_role_policy" "aws_lambda_iam_policy" {
+resource "aws_iam_role_policy" "aws_lambda_iam_role_policy" {
   policy = data.aws_iam_policy_document.aws_iam_policy_coffee_tips_aws_lambda_iam_policy_document.json
   role = aws_iam_role.iam_for_lambda.id
 }
